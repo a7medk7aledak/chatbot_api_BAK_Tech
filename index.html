@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مساعد المبيعات الذكي</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="chat-header-title">
+          <i class="fas fa-robot"></i>
+          <span>مساعد المبيعات الذكي</span>
+        </div>
+      </div>
+      
+      <div id="chat-box" class="chat-box">
+        <div class="message bot welcome-message">
+          <p>مرحباً بك! أنا مساعدك للتسوق والمبيعات. كيف يمكنني مساعدتك اليوم؟</p>
+        </div>
+      </div>
+      
+      <div class="chat-input-container">
+        <form id="chat-form">
+          <input type="text" id="user-input" placeholder="اسأل عن منتج أو عرض..." autocomplete="off" required>
+          <div class="chat-actions">
+            <button type="submit" class="send-btn">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+        <div id="suggestions" class="suggestions">
+          <div class="suggestion-pill" data-query="ما هي العروض الحالية؟">العروض الحالية</div>
+          <div class="suggestion-pill" data-query="كيف يمكنني الدفع؟">طرق الدفع</div>
+          <div class="suggestion-pill" data-query="ما هي سياسة الإرجاع؟">سياسة الإرجاع</div>
+        </div>
+      </div>
+      
+      <div class="chat-footer">
+        <p>تم التطوير بواسطة <strong>مساعد المبيعات الذكي</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
